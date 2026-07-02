@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo - Avaliação Parcial II Botânica</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #2e7d32;
+        }
+        .question-block {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #fafafa;
+            border-left: 5px solid #4caf50;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 15px 0;
+            display: block;
+        }
+        input[type="text"], input[type="number"], select {
+            padding: 5px;
+            margin: 0 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .acerto {
+            background-color: #c8e6c9 !important;
+            border-color: #388e3c !important;
+        }
+        .erro {
+            background-color: #ffcdd2 !important;
+            border-color: #d32f2f !important;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #e8f5e9;
+        }
+        .btn-verificar {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background 0.3s;
+        }
+        .btn-verificar:hover {
+            background-color: #1b5e20;
+        }
+        .resultado-texto {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Avaliação Parcial II - Botânica</h1>
+    <h2>Universidade Federal do Rio Grande do Sul</h2>
+
+    <div class="question-block">
+        <h3>1. Na tabela abaixo, sobre tecidos simples, escolha as respostas corretas.</h3>
+        <table>
+            <tr>
+                <th>Tecido simples</th>
+                <th>Função</th>
+                <th>Características da parede celular</th>
+                <th>Células vivas ou mortas na maturidade?</th>
+                <th>Meristema de origem</th>
+            </tr>
+            <tr>
+                <td><strong>Parênquima</strong></td>
+                <td><select class="quiz-input" data-answer="C"><option value="">-</option><option value="A">A. Condução de água</option><option value="B">B. Sustentação</option><option value="C">C. Fotossíntese, reserva e outras</option></select></td>
+                <td><select class="quiz-input" data-answer="B"><option value="">-</option><option value="A">A. Parede secundária espessada</option><option value="B">B. Parede primária delgada</option><option value="C">C. Parede primária espessada</option></select></td>
+                <td><select class="quiz-input" data-answer="A"><option value="">-</option><option value="A">A. Vivas</option><option value="B">B. Mortas</option></select></td>
+                <td><select class="quiz-input" data-answer="B"><option value="">-</option><option value="A">A. Protoderme</option><option value="B">B. Meristema fundamental</option><option value="C">C. Procâmbio</option></select></td>
+            </tr>
+            <tr>
+                <td><strong>Colênquima</strong></td>
+                <td><select class="quiz-input" data-answer="B"><option value="">-</option><option value="A">A. Condução de água</option><option value="B">B. Sustentação</option><option value="C">C. Fotossíntese, reserva e outras</option></select></td>
+                <td><select class="quiz-input" data-answer="A"><option value="">-</option><option value="A">A. Parede primária espessada</option><option value="B">B. Parede primária delgada</option><option value="C">C. Parede secundária espessada</option></select></td>
+                <td><select class="quiz-input" data-answer="A"><option value="">-</option><option value="A">A. Vivas</option><option value="B">B. Mortas</option></select></td>
+                <td><select class="quiz-input" data-answer="B"><option value="">-</option><option value="A">A. Protoderme</option><option value="B">B. Meristema fundamental</option><option value="C">C. Procâmbio</option></select></td>
+            </tr>
+            <tr>
+                <td><strong>Esclerênquima</strong></td>
+                <td><select class="quiz-input" data-answer="B"><option value="">-</option><option value="A">A. Condução de água</option><option value="B">B. Sustentação</option><option value="C">C. Fotossíntese, reserva e outras</option></select></td>
+                <td><select class="quiz-input" data-answer="A"><option value="">-</option><option value="A">A. Parede secundária espessada</option><option value="B">B. Parede primária delgada</option><option value="C">C. Parede primária espessada</option></select></td>
+                <td><select class="quiz-input" data-answer="B"><option value="">-</option><option value="A">A. Vivas</option><option value="B">B. Mortas</option></select></td>
+                <td><select class="quiz-input" data-answer="B"><option value="">-</option><option value="A">A. Protoderme</option><option value="B">B. Meristema fundamental</option><option value="C">C. Procâmbio</option></select></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="question-block">
+        <h3>2. Considere o desenho detalhado abaixo (de um feixe vascular caulinar) e complete.</h3>
+        <img src="q2.jpg" alt="Imagem do feixe vascular (adicione o arquivo q2.jpg na pasta)">
+        <p>A. A letra A aponta as <input type="text" class="quiz-input" data-answer="fibras"> (nome do tipo celular) já que apresentam paredes espessadas secundárias. Fazem parte do <input type="text" class="quiz-input" data-answer="floema"> (nome do tecido), um tecido complexo.</p>
+        <p>B. A letra G parece indicar um <input type="text" class="quiz-input" data-answer="elemento traqueal|elem traqueal|elem. traqueal"> (tipo celular), com um provável espessamento <input type="text" class="quiz-input" data-answer="anelar"> (tipo de espessamento), já que não vemos o espessamento da parede na imagem porque o plano de corte passou pela parede primária.</p>
+        <p>C. A letra F aponta para o <input type="text" class="quiz-input" data-answer="parênquima|parenquima"> (tipo celular), pertencente ao <input type="text" class="quiz-input" data-answer="xilema"> (nome do tecido).</p>
+        <p>E. A letra B indica um <input type="text" class="quiz-input" data-answer="elemento tubo crivado|elem tubo crivado|elem. tubo crivado"> (tipo celular) do <input type="text" class="quiz-input" data-answer="floema"> (nome do tecido), já que podemos ver os poros ou crivos na parede primária terminal. Já a letra C indica uma <input type="text" class="quiz-input" data-answer="célula companheira|celula companheira"> (tipo celular).</p>
+        <p>F. O feixe vascular ao lado é do tipo <input type="text" class="quiz-input" data-answer="colateral aberto">, já que a letra H aponta o câmbio fascicular.</p>
+        <p>G. Todas as células representadas neste desenho detalhado (exceto as não pertencentes ao feixe vascular) são originadas da atividade e diferenciação do <input type="text" class="quiz-input" data-answer="procâmbio|procambio"> (nome do meristema).</p>
+    </div>
+
+    <div class="question-block">
+        <h3>3. Complete os espaços em branco:</h3>
+        <img src="q3.jpg" alt="Imagem do estômato (adicione o arquivo q3.jpg na pasta)">
+        <p>A epiderme foliar de órgãos aéreos apresenta os conhecidos 'complexos estomáticos', formados por duas <input type="text" class="quiz-input" data-answer="células-guarda|celulas-guarda|células guarda|celulas guarda">, as quais definem uma abertura interna ou <input type="text" class="quiz-input" data-answer="ostíolo|ostiolo">. A cutícula, por sua vez, delimita uma outra abertura, mais externa, denominada <input type="text" class="quiz-input" data-answer="poro">. Em nossas atividades práticas, é comum ver a imagem, ao lado, nas preparações histológicas. Por isso, executamos um procedimento que evita este tipo de imagem. Como é explicada, em poucas palavras, a imagem ao lado? <input type="text" style="width: 250px;" class="quiz-input" data-answer="bolha de ar entra pelo ostíolo|bolha de ar entra pelo ostiolo|bolha de ar"></p>
+    </div>
+
+    <div class="question-block">
+        <h3>4. Analise a figura abaixo, de uma seção transversal de um órgão vegetativo, e complete.</h3>
+        <img src="q4.jpg" alt="Imagem da raiz (adicione o arquivo q4.jpg na pasta)">
+        <p>A. A imagem mostra a seção transversal de um(a) <input type="text" class="quiz-input" data-answer="raiz"> (nome do órgão) com crescimento <select class="quiz-input" data-answer="primário"><option value="">-</option><option value="primário">primário</option><option value="secundário">secundário</option></select>.</p>
+        <p>B. A letra A está indicando o(a) <input type="text" class="quiz-input" data-answer="endoderme">, caracterizado(a) por apresentar uma típica impregnação de <input type="text" class="quiz-input" data-answer="suberina"> em forma de anel ou "cinta", a chamada <input type="text" class="quiz-input" data-answer="estria de caspary|estrias de caspary"> (indicada pela letra F). Isso impede o transporte <select class="quiz-input" data-answer="apoplástico"><option value="">-</option><option value="simplástico">simplástico</option><option value="apoplástico">apoplástico</option></select>. Finalmente, a camada indicada pela letra A é originada da diferenciação do <input type="text" class="quiz-input" data-answer="meristema fundamental"> (nome do meristema).</p>
+        <p>C. Pela posição relativa de G, C e E, o órgão mostrado na figura tem uma diferenciação <select class="quiz-input" data-answer="centrípeta"><option value="">-</option><option value="centrífuga">centrífuga</option><option value="centrípeta">centrípeta</option></select> do <input type="text" class="quiz-input" data-answer="xilema"> (nome do tecido).</p>
+        <p>D. A letra E indica um <input type="text" class="quiz-input" data-answer="elemento de vaso|elem de vaso|elem. de vaso"> (tipo celular) pertencente ao <input type="text" class="quiz-input" data-answer="xilema"> (nome do tecido), ainda em diferenciação (é uma célula viva).</p>
+        <p>E. A letra B está indicando o <input type="text" class="quiz-input" data-answer="periciclo">, camada que delimita os tecidos vasculares. É originado(a) da diferenciação do <input type="text" class="quiz-input" data-answer="procâmbio|procambio"> (nome do meristema).</p>
+        <p>F. A letra D está indicando um <input type="text" class="quiz-input" data-answer="elemento tubo crivado|elem tubo crivado|elem. tubo crivado"> (tipo celular), pertencente ao <input type="text" class="quiz-input" data-answer="floema"> (nome do tecido).</p>
+        <p>G. Além da protoderme, qual outro meristema (primário ou secundário) não originou nenhum dos tecidos mostrados na imagem? <input type="text" class="quiz-input" data-answer="câmbio vascular/felogênio|cambio vascular/felogenio|câmbio vascular / felogênio"></p>
+    </div>
+
+    <div class="question-block">
+        <h3>5. Analise a figura acima e complete os espaços em branco:</h3>
+        <img src="q5.jpg" alt="Imagem do caule (adicione o arquivo q5.jpg na pasta)">
+        <p>A. A imagem mostra a seção transversal de um(a) <input type="text" class="quiz-input" data-answer="caule"> (nome do órgão) com crescimento predominantemente <select class="quiz-input" data-answer="primário"><option value="">-</option><option value="primário">primário</option><option value="secundário">secundário</option></select>.</p>
+        <p>B. A letra C está indicando o(a) <input type="text" class="quiz-input" data-answer="endoderme">, caracterizado(a) por apresentar armazenamento de <input type="text" class="quiz-input" data-answer="amido">, os quais estão envolvidos no geotropismo (como os encontrados na coifa).</p>
+        <p>C. Pela posição relativa de F e G, o órgão mostrado na figura tem uma diferenciação <select class="quiz-input" data-answer="centrífuga"><option value="">-</option><option value="centrífuga">centrífuga</option><option value="centrípeta">centrípeta</option></select> do <input type="text" class="quiz-input" data-answer="xilema"> (nome do tecido).</p>
+        <p>D. A letra E indica o <input type="text" class="quiz-input" data-answer="câmbio fascicular|cambio fascicular">, enquanto que a letra D aponta a região cujas células irão ser induzidas (por E) a se transformar em um <input type="text" class="quiz-input" data-answer="câmbio interfascicular|cambio interfascicular">.</p>
+        <p>E. A letra B está indicando o <input type="text" class="quiz-input" data-answer="xilema"> (nome do tecido), enquanto a letra A indica o <input type="text" class="quiz-input" data-answer="floema"> (nome do tecido). Ambos são predominantemente originados da atividade do <input type="text" class="quiz-input" data-answer="procâmbio|procambio"> (nome do meristema), um meristema <select class="quiz-input" data-answer="primário"><option value="">-</option><option value="primário">primário</option><option value="secundário">secundário</option></select>.</p>
+        <p>F. A letra C corresponde à última camada do sistema <input type="text" class="quiz-input" data-answer="fundamental"> (tipos celulares). Sob o tecido do qual fazem parte, está a zona cortical, com um importante tecido, indicado por I, denominado <input type="text" class="quiz-input" data-answer="clorênquima|clorenquima"> (nome do tecido), o que é um tecido <select class="quiz-input" data-answer="simples"><option value="">-</option><option value="simples">simples</option><option value="complexo">complexo</option></select>.</p>
+    </div>
+
+    <div class="question-block">
+        <h3>6. Relacione as colunas abaixo, relativas à anatomia foliar.</h3>
+        <p>Insira os números de 1 a 10 nos parênteses:</p>
+        <ol style="column-count: 2;">
+            <li>Face abaxial</li>
+            <li>Folha isobilateral</li>
+            <li>Célula buliforme</li>
+            <li>Folha anfiestomática</li>
+            <li>Folha hipoestomática</li>
+            <li>Folha epistomática</li>
+            <li>Bainha perivascular</li>
+            <li>Folha dorsiventral</li>
+            <li>Face adaxial</li>
+            <li>Mesofilo</li>
+        </ol>
+        <p>A. (<input type="number" class="quiz-input" data-answer="9" style="width: 40px;">) Identificada pela posição relativa do xilema. É a face ventral da folha.</p>
+        <p>B. (<input type="number" class="quiz-input" data-answer="5" style="width: 40px;">) Folha com estômatos apenas na face abaxial.</p>
+        <p>C. (<input type="number" class="quiz-input" data-answer="1" style="width: 40px;">) Identificada pela posição relativa do floema. É a face dorsal da folha.</p>
+        <p>D. (<input type="number" class="quiz-input" data-answer="8" style="width: 40px;">) Folha apresentando dois tipos de parênquimas distintos em cada face foliar.</p>
+        <p>E. (<input type="number" class="quiz-input" data-answer="7" style="width: 40px;">) Última camada do mesofilo que circunda o feixe vascular (nervura foliar). Pode, também, ser chamada de endoderme.</p>
+        <p>F. (<input type="number" class="quiz-input" data-answer="10" style="width: 40px;">) Região compreendida abaixo do sistema dérmico da folha, excluindo-se o sistema vascular.</p>
+        <p>G. (<input type="number" class="quiz-input" data-answer="6" style="width: 40px;">) Folha com estômatos apenas na face adaxial.</p>
+        <p>H. (<input type="number" class="quiz-input" data-answer="3" style="width: 40px;">) Típicas em Poaceae (gramíneas), permitem enrolamento ou dobramento do limbo foliar quando em condições de estresse hídrico.</p>
+        <p>I. (<input type="number" class="quiz-input" data-answer="2" style="width: 40px;">) Folha apresentando um mesofilo organizado na forma de um mesmo parênquima nas faces adaxial e abaxial e, na zona mediana do mesofilo, um parênquima distinto.</p>
+        <p>J. (<input type="number" class="quiz-input" data-answer="4" style="width: 40px;">) Folha com estômatos presentes nas faces adaxial e abaxial.</p>
+    </div>
+
+    <div class="question-block">
+        <h3>7. Coloque Verdadeiro (V) ou Falso (F) para as sentenças:</h3>
+        <p>A. (<select class="quiz-input" data-answer="V"><option value="">-</option><option value="V">V</option><option value="F">F</option></select>) Flores gamocarpelares originam frutos simples, enquanto flores dialicarpelares frutos agregados. Já os frutos múltiplos são originados de mais de uma flor (inflorescências).</p>
+        <p>B. (<select class="quiz-input" data-answer="F"><option value="">-</option><option value="V">V</option><option value="F">F</option></select>) Flores gamocarpelares originam frutos compostos, enquanto flores dialicarpelares simples. Já os frutos múltiplos são originados de mais de uma flor (inflorescências).</p>
+        <p>C. (<select class="quiz-input" data-answer="V"><option value="">-</option><option value="V">V</option><option value="F">F</option></select>) Os frutos derivados de flores monocarpelares (com apenas um carpelo) quando deiscentes, podem se abrir ao longo da sutura carpelar ou ao longo da nervura. Nesse caso, os frutos recebe denominações diferentes.</p>
+        <p>D. (<select class="quiz-input" data-answer="F"><option value="">-</option><option value="V">V</option><option value="F">F</option></select>) Flores dialicarpelares originam frutos múltiplos, enquanto flores gamocarpelares formam frutos agregados. Já os frutos compostos são originados de mais de uma flor (inflorescências).</p>
+        <p>E. (<select class="quiz-input" data-answer="V"><option value="">-</option><option value="V">V</option><option value="F">F</option></select>) Frutos agregados podem compreender frutículos carnosos ou secos e são sempre originados de flores dialicarpelares.</p>
+        <p>F. (<select class="quiz-input" data-answer="F"><option value="">-</option><option value="V">V</option><option value="F">F</option></select>) Frutos derivados de um único pistilo serão sempre frutos originados de um único carpelo.</p>
+        <p>G. (<select class="quiz-input" data-answer="V"><option value="">-</option><option value="V">V</option><option value="F">F</option></select>) Frutos derivados de um único pistilo serão sempre frutos simples.</p>
+        <p>H. (<select class="quiz-input" data-answer="F"><option value="">-</option><option value="V">V</option><option value="F">F</option></select>) Frutos secos sempre serão deiscentes.</p>
+    </div>
+
+    <button class="btn-verificar" onclick="verificarRespostas()">Verificar Respostas</button>
+    <div id="resultado" class="resultado-texto"></div>
+
+</div>
+
+<script>
+    function formatarTexto(texto) {
+        // Remove acentos, pontuações extras e deixa minúsculo para comparar melhor
+        return texto.trim().toLowerCase()
+            .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+            .replace(/\./g, "");
+    }
+
+    function verificarRespostas() {
+        const inputs = document.querySelectorAll('.quiz-input');
+        let acertos = 0;
+        let total = inputs.length;
+
+        inputs.forEach(input => {
+            let userAns = formatarTexto(input.value);
+            let answerRaw = input.getAttribute('data-answer');
+            
+            // Permite múltiplas formas corretas separadas por |
+            let correctAnswers = answerRaw.split('|').map(a => formatarTexto(a));
+
+            if (correctAnswers.includes(userAns) && userAns !== "") {
+                input.classList.remove('erro');
+                input.classList.add('acerto');
+                acertos++;
+            } else {
+                input.classList.remove('acerto');
+                input.classList.add('erro');
+            }
+        });
+
+        const resultDiv = document.getElementById('resultado');
+        resultDiv.innerHTML = `Você acertou ${acertos} de ${total} campos! <br> Continue praticando!`;
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
